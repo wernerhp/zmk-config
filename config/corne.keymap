@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        NumRow {
+            bindings = <&mo 1>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
+
+        RShift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <19>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        LShift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <16>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
